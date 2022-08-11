@@ -93,7 +93,7 @@ body {
 .popup__cnt {
   display: none;
   position: absolute;
-  width: 300px;
+  min-width: 300px;
   height: 400px;
   right: 0;
   top: calc(100% + 10px);
@@ -105,10 +105,10 @@ body {
   padding: 15px;
 
   overflow: scroll;
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none; 
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
 }
-.popup__cnt::-webkit-scrollbar{
+.popup__cnt::-webkit-scrollbar {
   display: none;
 }
 .popup__btn:checked ~ .popup__cnt {
@@ -144,7 +144,6 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 12px;
   column-gap: 8px;
-  
 }
 .popup__item__img {
   max-width: 50px;
@@ -153,7 +152,7 @@ body {
 }
 
 /* More btn */
-.more__btn{
+.more__btn {
   display: block;
   text-align: center;
 
@@ -163,17 +162,17 @@ body {
   width: 100%;
   padding: 4px;
 }
-.more__btn:active{
-  background-color: var(--popup-hover-color-active)
+.more__btn:active {
+  background-color: var(--popup-hover-color-active);
 }
 
-.more-items__cnt{
+.more-items__cnt {
   display: none;
 }
 
-.more__btn__checkbox:checked ~ .more-items__cnt{
+.more__btn__checkbox:checked ~ .more-items__cnt {
   display: block;
 }
-.more__btn__checkbox:checked + .more__btn{
+.more__btn__checkbox:checked + .more__btn {
   background-color: var(--popup-hover-color-active);
 }
