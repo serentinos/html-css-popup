@@ -37,8 +37,6 @@ body {
 }
 
 .container {
-  max-width: 1400px;
-  margin: 0 auto;
   padding: 30px 30px;
 }
 
@@ -178,10 +176,4 @@ body {
 }
 .more__btn__checkbox:checked + .more__btn{
   background-color: var(--popup-hover-color-active);
-}
-
-@media (max-width: 800px){
-  .container{
-    padding: 30px 10px;
-  }
 }
